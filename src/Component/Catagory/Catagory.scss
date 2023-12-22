@@ -1,0 +1,131 @@
+.home-container {
+
+    .slick-prev:before {
+        color: red;
+        font-size: 30px;
+    }
+
+    .slick-next:before {
+        color: red;
+        font-size: 30px;
+    }
+
+    .slick-dots li button:before {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 8px !important;
+        background-color: #df5c10;
+        color: #df5c10;
+        width: 10px;
+        height: 10px;
+    }
+
+    .slick-dots li.slick-active button:before {
+        background-color: #ff3300;
+        color: #ff3300;
+    }
+}
+
+.slick-slide>div {
+    margin: 0 10px;
+}
+
+.slick-list {
+    margin: 0 -10px;
+}
+
+.catagory-container {
+    // height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 150px;
+    // background-color: red;
+    // overflow: hidden;
+    margin-bottom: 60px;
+
+    .catagory-card-link {
+        text-decoration: none;
+        color: inherit; 
+
+        .card {
+            border: 1px solid #fff;
+            background: black;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 200px;
+            color: #fff;
+            cursor: pointer;
+    
+            .card-top {
+    
+                img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    background: black;
+                }
+    
+                h1 {
+                    font-size: 0.9rem;
+                    margin: 20px;
+                }
+            }
+    
+            .card-bottom {
+                margin: 10px 20px;
+    
+                .category {
+                    position: relative;
+    
+                    &::before {
+                        content: '';
+                        background: rgb(255, 61, 61);
+                        position: absolute;
+                        top: calc(100% + 10px);
+                        left: 0;
+                        right: 0;
+                        height: 2px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+// @media screen and (max-width: 800px) {
+//     .slick-slide>div {
+//         // padding: 0 80px;
+//         margin-left: 15%;
+//     }
+// }
+
+
+@media screen and (max-width: 480px) {
+    .slick-slide>div {
+        margin: 0 70px;
+    }
+
+    .catagory-container {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .slick-slide>div {
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .catagory-container {
+        margin-top: 50px;
+        margin-bottom: 20px;
+
+        .card {
+            width: 350px;
+        }
+    }
+}
