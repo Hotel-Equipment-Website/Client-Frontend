@@ -1,0 +1,305 @@
+.description-contaier {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.397);
+    // background-color: red;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
+    .card-container {
+        display: flex;
+        width: 70%;
+        height: 70vh;
+        // background-color: rgb(119, 79, 79);
+        background-color: white;
+        border-radius: 10px;
+
+        .maindetail {
+            display: flex;
+            width: 95%;
+
+            .left-img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40%;
+                height: 100%;
+                border: solid black 1px;
+                border-radius: 10px 0px 0 10px;
+
+                img {
+                    width: 80%;
+
+                }
+            }
+
+            .right-descriptino {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60%;
+                height: 100%;
+                // background-color: beige;
+
+                .main-detailTag {
+                    width: 80%;
+                    // background-color: red;
+
+                    p {
+                        font-size: 18px;
+                        font-weight: bold;
+                        padding: 20px;
+                    }
+
+                    .inquire-section {
+                        // background-color: red;
+                        display: flex;
+                        align-items: center;
+                        // justify-content: center;
+                        margin-top: 15px;
+
+                        .whatsapp {
+                            color: green;
+
+                            &:hover {
+                                cursor: pointer;
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .closebtn-fram {
+            display: flex;
+            justify-content: flex-end;
+            // background-color: yellow;
+            width: 5%;
+
+            .close-btn {
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1115px) {
+    .description-contaier {
+
+        .card-container {
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .description-contaier {
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // width: 100%;
+        // height: 100vh;
+        // background-color: rgb(236, 154, 154);
+
+        .card-container {
+            // display: flex;
+            width: 90%;
+            // height: 70vh;
+            // // background-color: rgb(119, 79, 79);
+            // background-color: white;
+            // border-radius: 10px;
+
+            // .maindetail {
+            //     display: flex;
+            //     width: 95%;
+
+            //     .left-img {
+            //         display: flex;
+            //         align-items: center;
+            //         justify-content: center;
+            //         width: 40%;
+            //         height: 100%;
+            //         border: solid black 1px;
+            //         border-radius: 10px 0px 0 10px;
+
+            //         img {
+            //             width: 80%;
+
+            //         }
+            //     }
+
+            .right-descriptino {
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                // width: 60%;
+                // height: 100%;
+                // background-color: beige;
+
+                .main-detailTag {
+                    // width: 80%;
+                    // // background-color: red;
+
+                    p {
+                        // font-size: 18px;
+                        // font-weight: bold;
+                        // padding: 10px;
+                    }
+
+                    .inquire-section {
+                        // // background-color: red;
+                        // display: flex;
+                        // align-items: center;
+                        // // justify-content: center;
+                        // margin-top: 15px;
+
+                        // .whatsapp {
+                        //     color: green;
+
+                        //     &:hover {
+                        //         cursor: pointer;
+                        //     }
+                        // }
+                    }
+                }
+            }
+        }
+
+        .closebtn-fram {
+            // display: flex;
+            // justify-content: flex-end;
+            // // background-color: yellow;
+            // width: 5%;
+
+            // .close-btn {
+
+            //     &:hover {
+            //         cursor: pointer;
+            //     }
+            // }
+            // }
+        }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .description-contaier {
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // width: 100%;
+        // height: 100vh;
+        // background-color: rgb(236, 154, 154);
+
+        .card-container {
+            margin-top: 70px;
+            padding-bottom: 20px;
+            // display: flex;
+            // width: 90%;
+            // width: 100%;
+            height: auto;
+            // height: 70vh;
+            // // background-color: rgb(119, 79, 79);
+            // background-color: white;
+            // border-radius: 10px;
+
+            .maindetail {
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                height: auto;
+                // display: flex;
+                // width: 95%;
+
+                .left-img {
+                    margin-top: 20px;
+                    border: none;
+                    // height: 250px;
+                    width: auto;
+                    background-color: red;
+                    //         display: flex;
+                    //         align-items: center;
+                    //         justify-content: center;
+                    //         width: 40%;
+                    //         height: 100%;
+                    //         border: solid black 1px;
+                    //         border-radius: 10px 0px 0 10px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .right-descriptino {
+                    // display: flex;
+                    // align-items: center;
+                    // justify-content: center;
+                    // width: 60%;
+                    width: 100%;
+                    margin-top: 20px;
+                    // background-color: red;
+                    // height: 100%;
+                    // background-color: beige;
+
+                    .main-detailTag {
+                        // width: 80%;
+                        // background-color: red;
+
+                        p {
+                            font-size: 15px;
+                            // font-weight: bold;
+                            // padding: 10px;
+                            padding-left: 0;
+                        }
+
+                        .inquire-section {
+                            // // background-color: red;
+                            // display: flex;
+                            // align-items: center;
+                            // // justify-content: center;
+                            // margin-top: 15px;
+
+                            .inqure-btn {
+                                margin-left: 0;
+                            }
+
+                            // .whatsapp {
+                            //     color: green;
+
+                            //     &:hover {
+                            //         cursor: pointer;
+                            //     }
+                            // }
+                        }
+                    }
+                }
+            }
+
+            .closebtn-fram {
+                // display: flex;
+                // justify-content: flex-end;
+                // // background-color: yellow;
+                width: 7%;
+
+                .close-btn {
+                    font-size: 40px;
+                    // background-color: yellow;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {}
