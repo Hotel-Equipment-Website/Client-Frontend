@@ -40,9 +40,9 @@ export default function ItemDescription(props) {
                         </div>
                         <div className="right-descriptino">
                             <div className="main-detailTag">
-                                <div className="catagoryName"><p>Catagory Name :  {props.category_name}</p></div>
+                                {/* <div className="catagoryName"><p>Catagory Name :  {props.category_name}</p></div> */}
                                 <div className="itemName"><p>Item Name :  {itemData.item_name}</p></div>
-                                {/* <div className="modelNmuber"><p>Model Number : {itemData.model_number}</p></div> */}
+                                <div className="modelNmuber"><p>Model Number : {itemData.model_number}</p></div>
                                 <div className="brand"><p>Brand :  {itemData.brand}</p></div>
                                 <div className="description"><p>Description : {itemData.description}</p></div>
                                 {/* <div className="contactNymber"><p>Contact Number : </p></div> */}
