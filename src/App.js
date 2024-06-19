@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Im
 import ContactUs from './Component/ContactUs/ContactUs';
 import Navigation2 from './Component/Navigation/NavigationNew';
 import Home from './Component/Home/Home';
-import WhatWeDo from './Component/WhatWeDo/WhatWeDo';
 import Catagory from './Component/Catagory/Catagory';
 import About from './Component/About/About';
 import Footer from './Component/Footer/Footer';
@@ -19,10 +18,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Subcatagory/:category_id/:category_name" element={<SubcatagoryPage />} />
         <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/ContactUs" element={<ContactUs />} />
-        {/* <Route path="/WhatWeDo" element={<WhatWeDo />} /> */}
-        <Route path="/Catagory" element={<Catagory />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/catagory" element={<Catagory />} />
+        <Route path="/about" element={<About />} />
         <Route path="/detail" element={<ItemDescription />} />
       </Routes>
       <Footer />

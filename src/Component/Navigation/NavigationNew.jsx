@@ -17,14 +17,16 @@ export default function Navigation() {
         </label>
         <div className='name'>
           <div className='logo'><a href="/"><img src={logo} alt="logo" /></a></div>
-          <h1><a href="/" style={{ color: 'white', textDecoration: 'none' }}>Hotel</a></h1>
+          {/* <h1><a href="/" style={{ color: 'white', textDecoration: 'none' }}>Hotel</a></h1> */}
         </div>
         <ul>
           <li><a href="/">HOME</a></li>
           <li><a href="/#catagory">CATEGORY</a></li>
-          <li><a href="/About">ABOUT US</a></li>
+          {/* <li><a href="/About">ABOUT US</a></li> */}
+          <li><Link to={"/about"}>About</Link></li>
           {/* <li><a href="#Package">Package</a></li> */}
-          <li><a href="ContactUs">CONTACT US</a></li>
+          {/* <li><a href="Contact-us">CONTACT US</a></li> */}
+          <li><Link to={"/contact-us"}>Contact</Link></li>
         </ul>
       </nav>
     </div>

@@ -1,38 +1,23 @@
-export const dataDigitalBestSeller = [
+export const sampleCategoryData = [
+
     {
-        id: 1,
-        catagoryTypr: 'Type 01',
+        category_id: 1,
+        category_name: 'Plates',
+        image: 'plate.jpg'
     },
     {
-        id: 2,
-        catagoryTypr: 'Type 02',
+        category_id: 2,
+        category_name: 'Mugs',
+        image: 'cups.jpg'
     },
     {
-        id: 3,
-        catagoryTypr: 'Type 03',
+        category_id: 3,
+        category_name: 'Glasses',
+        image: 'glass.jpg'
     },
     {
-        id: 4,
-        catagoryTypr: 'Type 04',
-    },
-    {
-        id: 5,
-        catagoryTypr: 'Type 05',
-    },
-    {
-        id: 6,
-        catagoryTypr: 'Type 06',
-    },
-    {
-        id: 7,
-        catagoryTypr: 'Type 07',
-    },
-    {
-        id: 8,
-        catagoryTypr: 'Type 08',
-    },
-    {
-        id: 9,
-        catagoryTypr: 'Type 09',
+        category_id: 4,
+        category_name: 'Spoons & Forks',
+        image: 'spoons_&_forks.jpg'
     },
 ];

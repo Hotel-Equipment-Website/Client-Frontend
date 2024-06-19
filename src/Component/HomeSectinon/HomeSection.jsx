@@ -1,7 +1,7 @@
 import React from 'react'
 import './HomeSection.scss'
 import { useNavigate } from 'react-router-dom';
-import Button from '@mui/material/Button';
+import Fade from 'react-reveal/Fade'
 
 export default function HomeSection() {
 
@@ -15,19 +15,37 @@ export default function HomeSection() {
     return (
         <div className='homesection-container'>
             <div className='dark-background'>
-                <div className="nameOfTheSite">
-                    <h1 style={{ color: 'red' }}>Hotel Name</h1>
+                {/* <div className="nameOfTheSite">
+                    <Fade bottom duration={2000}>
+                        <h1>NTN Hotel Supply Network</h1>
+                    </Fade>
+                    <Fade bottom duration={2000}>
+                        <h2>Nextgen Tourism Necessities Hotel Supply Network</h2>
+                    </Fade>
                 </div>
-                <div className='text-header'>
-                    <p>World's Best</p>
-                    <p>Quality Products</p>
-                </div>
-                <div className='inquire'>
-                    <button onClick={handleInquireClick}>Inquire</button>
-                </div>
-                {/* <Button style={{ marginLeft: "60px", marginTop: "20px" }} variant="contained" disableElevation onClick={handleInquireClick}>
-                    Inquire
-                </Button> */}
+                <Fade bottom duration={2000}>
+                    <div className='text-header'>
+                        <p>World's Best Quality Products</p>
+                    </div>
+                </Fade>
+                <Fade bottom duration={2000}>
+                    <div className='inquire'>
+                        <button onClick={handleInquireClick}>Inquire</button>
+                    </div>
+                </Fade> */}
+
+                <Fade bottom duration={2000}>
+                    <div className="nameOfTheSite">
+                        <h1>NTN Hotel Supply Network</h1>
+                        <h2>Nextgen Tourism Necessities Hotel Supply Network</h2>
+                    </div>
+                        <div className='text-header'>
+                        <p>World's Best Quality Products</p>
+                        </div>
+                    <div className='inquire'>
+                        <button onClick={handleInquireClick}>Inquire</button>
+                    </div>
+                </Fade>
             </div>
         </div >
     )

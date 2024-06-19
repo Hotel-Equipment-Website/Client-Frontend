@@ -52,45 +52,62 @@
             border-radius: 50%;
         }
 
-        .lobby1 {
+        .size-of-img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 100%;
             height: 80vh;
-            // background-color: blue;
-            background-image: url('../../image/ImageSlider/lobby1.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
+            background-color: blue;
+            // background-image: url('../../image/ImageSlider/lobby1.jpg');
 
-        .lobby2 {
-            width: 100%;
-            height: 80vh;
-            // background-color: blue;
-            background-image: url('../../image/ImageSlider/lobby2.jpg');
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
+                img {
+                    width: 64%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
 
-        .bedroom {
-            width: 100%;
-            height: 80vh;
-            // background-color: blue;
-            background-image: url('../../image/ImageSlider/bedroom.jpg');
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
+        // .lobby1 {
+        //     width: 100%;
+        //     height: 80vh;
+        //     // background-color: blue;
+        //     background-image: url('../../image/ImageSlider/lobby1.jpg');
+        //     background-repeat: no-repeat;
+        //     background-position: center;
+        //     background-size: cover;
+        // }
 
-        .open {
-            width: 100%;
-            height: 80vh;
-            // background-color: blue;
-            background-image: url('../../image/ImageSlider/open.jpg');
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
+        // .lobby2 {
+        //     width: 100%;
+        //     height: 80vh;
+        //     // background-color: blue;
+        //     background-image: url('../../image/ImageSlider/lobby2.jpg');
+        //     background-position: center;
+        //     background-size: cover;
+        //     background-repeat: no-repeat;
+        // }
+
+        // .bedroom {
+        //     width: 100%;
+        //     height: 80vh;
+        //     // background-color: blue;
+        //     background-image: url('../../image/ImageSlider/bedroom.jpg');
+        //     background-position: center;
+        //     background-size: cover;
+        //     background-repeat: no-repeat;
+        // }
+
+        // .open {
+        //     width: 100%;
+        //     height: 80vh;
+        //     // background-color: blue;
+        //     background-image: url('../../image/ImageSlider/open.jpg');
+        //     background-position: center;
+        //     background-size: cover;
+        //     background-repeat: no-repeat;
+        // }
     }
 }
 

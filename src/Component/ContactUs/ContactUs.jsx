@@ -50,11 +50,11 @@ export default function ContactUs() {
             <div className="body-detail"><p>Call us to book your order.</p></div>
             <div className="conatct-detail">
               <h4><IoIosCall style={{ paddingRight: '10px' }} />Mobile Number:</h4>
-              <p style={{ color: 'red' }}>0712345698</p>
+              <p>0111111111</p>
               <h4><AiOutlineWhatsApp style={{ paddingRight: '10px' }} />WhatsApp Number:</h4>
-              <p style={{ color: 'red' }}>0712345698</p>
+              <p>0111111111</p>
               <h4><AiOutlineMail style={{ paddingRight: '10px' }} />Email:</h4>
-              <p style={{ color: 'red' }}>abc@gmail.com</p>
+              <p>abc@gmail.com</p>
             </div>
           </div>
         </div>

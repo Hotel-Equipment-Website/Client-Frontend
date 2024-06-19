@@ -1,19 +1,112 @@
+// .description-contaier {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 100vw;
+//     height: 100vh;
+//     background-color: rgba(0, 0, 0, 0.397);
+//     // background-color: red;
+//     position: fixed;
+//     top: 0;
+//     z-index: 1000;
+
+//     .card-container {
+//         display: flex;
+//         width: 70%;
+//         height: 70vh;
+//         // background-color: rgb(119, 79, 79);
+//         background-color: white;
+//         border-radius: 10px;
+
+//         .maindetail {
+//             display: flex;
+//             width: 95%;
+
+//             .left-img {
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: center;
+//                 width: 40%;
+//                 height: 100%;
+//                 border: solid black 1px;
+//                 border-radius: 10px 0px 0 10px;
+//                 overflow: hidden;
+
+//                 img {
+//                     width: 80%;
+
+//                 }
+//             }
+
+//             .right-descriptino {
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: center;
+//                 width: 60%;
+//                 height: 100%;
+//                 // background-color: beige;
+
+//                 .main-detailTag {
+//                     width: 80%;
+//                     // background-color: red;
+
+//                     p {
+//                         font-size: 18px;
+//                         font-weight: bold;
+//                         padding: 20px;
+//                     }
+
+//                     .inquire-section {
+//                         // background-color: red;
+//                         display: flex;
+//                         align-items: center;
+//                         // justify-content: center;
+//                         margin-top: 15px;
+
+//                         .whatsapp {
+//                             color: green;
+
+//                             &:hover {
+//                                 cursor: pointer;
+//                                 transform: scale(1.2);
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+
+//         .closebtn-fram {
+//             display: flex;
+//             justify-content: flex-end;
+//             // background-color: yellow;
+//             width: 5%;
+
+//             .close-btn {
+
+//                 &:hover {
+//                     cursor: pointer;
+//                 }
+//             }
+//         }
+//     }
+// }
+
 .description-contaier {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.397);
-    // background-color: red;
+    background-color: rgba(0, 0, 0, 0.719);
     position: fixed;
     top: 0;
-    z-index: 1000;
+    z-index: 10;
 
     .card-container {
         display: flex;
         width: 70%;
-        height: 70vh;
+        // height: 70vh;
         // background-color: rgb(119, 79, 79);
         background-color: white;
         border-radius: 10px;
@@ -21,19 +114,25 @@
         .maindetail {
             display: flex;
             width: 95%;
+            margin: 10px 0 10px 0;
 
             .left-img {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 width: 40%;
-                height: 100%;
+                // height: 100%;
                 border: solid black 1px;
-                border-radius: 10px 0px 0 10px;
+                border-radius: 10px 10px 10px 10px;
                 overflow: hidden;
+                background-position: center;
+                background-size: cover;
+                margin: 10px;
 
                 img {
-                    width: 80%;
+                    width: 100%;
+                    height: 100%;
+                    // object-fit: cover;
 
                 }
             }
@@ -47,13 +146,17 @@
                 // background-color: beige;
 
                 .main-detailTag {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
                     width: 80%;
                     // background-color: red;
+                    margin: 10px;
 
                     p {
                         font-size: 18px;
                         font-weight: bold;
-                        padding: 20px;
+                        padding: 10px;
                     }
 
                     .inquire-section {
@@ -86,6 +189,7 @@
 
                 &:hover {
                     cursor: pointer;
+                    transform: scale(1.1);
                 }
             }
         }
@@ -193,109 +297,63 @@
 
 @media screen and (max-width: 740px) {
     .description-contaier {
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-        // width: 100%;
-        // height: 100vh;
-        // background-color: rgb(236, 154, 154);
-
+    
         .card-container {
-            margin-top: 70px;
-            padding-bottom: 20px;
-            // display: flex;
-            // width: 90%;
-            // width: 100%;
-            height: auto;
-            // height: 70vh;
-            // // background-color: rgb(119, 79, 79);
-            // background-color: white;
-            // border-radius: 10px;
-
+            flex-direction: column-reverse;
+            width: 550px;
+    
             .maindetail {
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                flex-direction: column;
-                height: auto;
-                // display: flex;
-                // width: 95%;
-
+                width: 550px;
+                height: 500px;
+                // background-color: red;
+    
                 .left-img {
-                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 80%;
+                    height: 100%;
                     border: none;
-                    // height: 250px;
-                    width: auto;
-                    background-color: red;
-                    //         display: flex;
-                    //         align-items: center;
-                    //         justify-content: center;
-                    //         width: 40%;
-                    //         height: 100%;
-                    //         border: solid black 1px;
-                    //         border-radius: 10px 0px 0 10px;
-
+                    margin: 0px;
+                    // background-color: blue;
+    
                     img {
-                        width: 100%;
+                        border: solid black 1px;
+                        border-radius: 10px 10px 10px 10px;
+                        // height: 100%;
+                        // object-fit: cover;
+    
                     }
                 }
-
+    
                 .right-descriptino {
-                    // display: flex;
-                    // align-items: center;
-                    // justify-content: center;
-                    // width: 60%;
                     width: 100%;
-                    margin-top: 20px;
-                    // background-color: red;
-                    // height: 100%;
                     // background-color: beige;
-
+    
                     .main-detailTag {
-                        // width: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        width: 80%;
                         // background-color: red;
-
-                        p {
-                            font-size: 15px;
-                            // font-weight: bold;
-                            // padding: 10px;
-                            padding-left: 0;
-                        }
-
-                        .inquire-section {
-                            // // background-color: red;
-                            // display: flex;
-                            // align-items: center;
-                            // // justify-content: center;
-                            // margin-top: 15px;
-
-                            .inqure-btn {
-                                margin-left: 0;
-                            }
-
-                            // .whatsapp {
-                            //     color: green;
-
-                            //     &:hover {
-                            //         cursor: pointer;
-                            //     }
-                            // }
-                        }
                     }
                 }
             }
 
             .closebtn-fram {
-                // display: flex;
-                // justify-content: flex-end;
-                // // background-color: yellow;
-                width: 7%;
-
+                display: flex;
+                justify-content: flex-end;
+                // background-color: yellow;
+                width: 100%;
+    
                 .close-btn {
-                    font-size: 40px;
-                    // background-color: yellow;
-
+    
                     &:hover {
                         cursor: pointer;
+                        transform: scale(1.1);
                     }
                 }
             }
@@ -303,4 +361,62 @@
     }
 }
 
-@media screen and (max-width: 640px) {}
+@media screen and (max-width: 580px) {
+    .description-contaier {
+    
+        .card-container {
+            width: 450px;
+    
+            .maindetail {
+                width: 450px;
+                // background-color: red;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .description-contaier {
+    
+        .card-container {
+            width: 350px;
+    
+            .maindetail {
+                width: 350px;
+                height: auto;
+                // background-color: red;
+
+                .left-img {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 80%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .description-contaier {
+    
+        .card-container {
+            width: 300px;
+    
+            .maindetail {
+                width: 300px;
+                height: auto;
+                // background-color: red;
+
+                .left-img {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 80%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

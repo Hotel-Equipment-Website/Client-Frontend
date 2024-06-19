@@ -12,7 +12,7 @@
     scroll-behavior: auto;
 
     .cover {
-        padding-top: 15vh;
+        padding-top: 10vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -61,6 +61,7 @@
     }
 
     .catagory-section {
+        justify-content: center;
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-auto-flow: row;

@@ -18,6 +18,7 @@ import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import { Link } from 'react-router-dom';
 import instance from '../../utility/AxiosInstance';
+import {sampleCategoryData} from './data';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -63,6 +64,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 
 export default function Catagory() {
+
     // const settings = {
     //     dots: true,
     //     infinite: false,
@@ -70,7 +72,6 @@ export default function Catagory() {
     //     slidesToShow: 4,
     //     slidesToScroll: 4,
     //     arrows: false,
-    //     rows: 2,
     //     initialSlide: 0,
     //     responsive: [
     //         {
@@ -89,6 +90,7 @@ export default function Catagory() {
     //                 slidesToShow: 2,
     //                 slidesToScroll: 2,
     //                 initialSlide: 1,
+    //                 rows: 1,
     //             },
     //         },
     //         {
@@ -103,10 +105,10 @@ export default function Catagory() {
     //         {
     //             breakpoint: 480,
     //             settings: {
-    //                 slidesToShow: 1,
-    //                 slidesToScroll: 1,
-    //                 initialSlide: 1,
-    //                 rows: 1,
+    //                 slidesToShow: 2,
+    //                 slidesToScroll: 2,
+    //                 initialSlide: 2,
+    //                 rows: 1, // Update to 1 for horizontal layout
     //                 // vertical: true,
     //                 // verticalSwiping: true,
     //                 // swipeToSlide: true,
@@ -158,28 +160,39 @@ export default function Catagory() {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 1,
-                    rows: 1, // Update to 1 for horizontal layout
-                    // vertical: true,
-                    // verticalSwiping: true,
-                    // swipeToSlide: true,
+                    rows: 1,
                 },
             },
         ],
     };
 
-
     const [categoryData, setCategoryData] = useState([]);
+
+    // useEffect(() => {
+    //     instance.get("/categories")
+    //         .then(res => {
+    //             if (res.data !== "No data found") {
+    //                 setCategoryData(res.data)
+    //                 // console.log(categoryData)
+    //             }
+    //             else console.log("No data found");
+    //         }).catch(err => console.log(err))
+    // }, [])
 
     useEffect(() => {
         instance.get("/categories")
             .then(res => {
                 if (res.data !== "No data found") {
-                    setCategoryData(res.data)
-                    // console.log(categoryData)
+                    setCategoryData(res.data);
+                } else {
+                    console.log("No data found");
                 }
-                else console.log("No data found");
-            }).catch(err => console.log(err))
-    }, [])
+            })
+            .catch(err => {
+                console.log(err);
+                setCategoryData(sampleCategoryData);
+            });
+    }, []);
 
     return (
         <div className='catagory-container' id="catagory">
@@ -200,7 +213,8 @@ export default function Catagory() {
                                     <CardMedia
                                         component="img"
                                         height="180"
-                                        image={`http://localhost:3001/image/${item.image}`}
+                                        // image={`http://localhost:3001/image/${item.image}`}
+                                        image={`./category/${item.image}`}
                                         alt="Your Image Alt Text"
                                     />
                                     <CardContent>
